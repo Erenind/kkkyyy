@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>kkkyyy</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-label">总编程时间</span>
+          <span class="stat-value" id="totalTime">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">总天数</span>
+          <span class="stat-value" id="totalDays">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">日均</span>
+          <span class="stat-value" id="avgTime">0</span>
+        </div>
+      </div>
+
+      <div class="recorder">
+        <div class="timer-display" id="timerDisplay">00:00:00</div>
+        <button class="record-btn" id="recordBtn">开始记录</button>
+      </div>
+
+      <canvas id="chart"></canvas>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

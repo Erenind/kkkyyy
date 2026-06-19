@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #24273a;
+  color: #cad3f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 640px;
+  padding: 24px;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.stat-card {
+  background: #363a4f;
+  border-radius: 12px;
+  padding: 16px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #494d64;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #a5adcb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #cad3f5;
+}
+
+.recorder {
+  background: #363a4f;
+  border-radius: 12px;
+  border: 1px solid #494d64;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer-display {
+  font-size: 36px;
+  font-weight: 700;
+  color: #6c7086;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.timer-display.active {
+  color: #f5a97f;
+}
+
+.record-btn {
+  background: #a6da95;
+  color: #24273a;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.record-btn:hover {
+  background: #8bd5ca;
+}
+
+.record-btn:active {
+  transform: scale(0.97);
+}
+
+.record-btn.recording {
+  background: #ed8796;
+}
+
+.record-btn.recording:hover {
+  background: #ee99a0;
+}
+
+#chart {
+  width: 100%;
+  height: 240px;
+  background: #363a4f;
+  border-radius: 12px;
+  border: 1px solid #494d64;
+}

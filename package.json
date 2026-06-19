@@ -1,0 +1,17 @@
+{
+  "name": "kkkyyy",
+  "version": "0.0.1",
+  "description": "A program can see many data of you",
+  "keywords": [
+    "kkkyyy"
+  ],
+  "license": "ISC",
+  "author": "erenind",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron",
+    "start": "electron ."
+  }
+}
