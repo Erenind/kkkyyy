@@ -9,6 +9,8 @@
 ---
 
 ## 📦 Changelog
+### v1.2.0 - shutdown heart record
+- 🛑 退出应用时自动保存当前活跃 session，下次启动可恢复
 
 ### v1.1.0 — Live Recording
 

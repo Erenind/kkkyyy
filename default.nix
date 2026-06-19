@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation {
-  name = "kkkyyy-1.1.1";
+  name = "kkkyyy-1.2.0";
   src = ./.;
 
   nativeBuildInputs = [ pkgs.makeWrapper ];

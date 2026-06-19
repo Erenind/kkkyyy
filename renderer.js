@@ -175,6 +175,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     alert('读取数据失败: ' + err.message)
   }
 
+  if (window.electronAPI.onAutoEndSession) {
+    window.electronAPI.onAutoEndSession(async () => {
+      if (!activeStart) return
+      stopTimer()
+      try {
+        const data = await window.electronAPI.readCodeTime()
+        reloadData(data)
+      } catch (_) {}
+    })
+  }
+
   document.getElementById('recordBtn').addEventListener('click', async () => {
     try {
       if (activeStart) {
