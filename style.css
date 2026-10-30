@@ -113,3 +113,34 @@ body {
   border-radius: 12px;
   border: 1px solid #494d64;
 }
+
+.cal-card {
+  background: #363a4f;
+  border-radius: 12px;
+  border: 1px solid #494d64;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+#calendar {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.cal-card {
+  position: relative;
+}
+
+.cal-tooltip {
+  position: fixed;
+  background: #1e2030;
+  color: #cad3f5;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #494d64;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}

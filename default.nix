@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation {
-  name = "kkkyyy-1.2.1";
+  name = "kkkyyy-1.7.1";
   src = ./.;
 
   nativeBuildInputs = [ pkgs.makeWrapper ];
@@ -30,7 +30,7 @@ EOF
 
   meta = {
     description = "Code time tracker visualizer";
-    longDescription = "One-click code time tracker with live timer, daily bar chart, and Catppuccin Macchiato theme. Data stored in JSON at ~/.local/share/kkkyyy/code-time.json.";
+    longDescription = "One-click code time tracker with live timer, daily bar chart, GitHub-style calendar heatmap, and Catppuccin Macchiato theme. Data stored in JSON at ~/.local/share/kkkyyy/code-time.json.";
     homepage = "https://github.com/erenind/kkkyyy";
     license = pkgs.lib.licenses.isc;
     maintainers = [];
